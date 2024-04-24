@@ -1,0 +1,7 @@
+name: CB Menu Import
+type: module
+description: 'Imports menu items from a JSONAPI endpoint.'
+package: Custom
+core_version_requirement: ^8 || ^9 || ^10
+dependencies:
+  - drupal:menu_link_content

@@ -1,0 +1,7 @@
+services:
+  cb_menu_import.http_client:
+    class: GuzzleHttp\Client
+
+  cb_menu_import.importer:
+    class: Drupal\cb_menu_import\MenuImporter
+    arguments: ['@cb_menu_import.http_client', '@entity_type.manager', '@plugin.manager.menu.link']

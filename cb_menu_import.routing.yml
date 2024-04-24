@@ -1,0 +1,7 @@
+cb_menu_import.admin_settings:
+  path: '/admin/config/system/custom-menu-import'
+  defaults:
+    _form: '\Drupal\cb_menu_import\Form\ImportMenuForm'
+    _title: 'Custom Menu Import Settings'
+  requirements:
+    _permission: 'administer site configuration'
